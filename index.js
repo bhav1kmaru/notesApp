@@ -38,7 +38,7 @@ const swaggerSpec=swaggerJsDoc(options)
 //create a route for docs UI
 app.use("/docs",swaggerUI.serve,swaggerUI.setup(swaggerSpec))
 app.use('/users',userRouter)
-app.use(authenticate)
+// app.use(authenticate)
 app.use('/notes',noteRouter)
 
 const port=process.env.port
