@@ -1,6 +1,6 @@
 const express=require('express')
 const { connection } = require('./db')
-const { authenticate } = require('./middlewares/authenticate.middleware')
+
 const { noteRouter } = require('./routes/Note.routes')
 const { userRouter } = require('./routes/User.routes')
 const cors=require('cors')
